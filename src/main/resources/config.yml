@@ -1,3 +1,10 @@
+#礼包文字提示功能
+#需搭配EssentialsX插件使用，EssentialsX全家桶下载地址： https://essentialsx.net/downloads ，记得在打开的网页勾选EssentialsX Spawn，并点击上方的Download Selected按钮进行下载
+kits:
+  enable: false
+  message: "你已获得新手礼包！"
+
+#书籍配置
 book:
   title: "游玩指南"
   author: "服务器官方"

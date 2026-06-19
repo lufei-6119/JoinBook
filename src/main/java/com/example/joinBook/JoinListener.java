@@ -67,6 +67,12 @@ public class JoinListener implements Listener {
 
             // 自动打开书
             player.openBook(book);
+
+            boolean kitsenable = JoinBook.main.getConfig().getBoolean("kits.enable");
+
+            if (kitsenable) {
+                player.sendMessage(JoinBook.main.getConfig().getString("kits.message"));
+            }
         }
     }
 }
