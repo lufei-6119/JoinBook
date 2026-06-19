@@ -1,0 +1,13 @@
+name: JoinBook
+version: '${version}'
+
+main: com.example.joinBook.JoinBook
+api-version: '1.20'
+load: POSTWORLD
+
+commands:
+  joinbook:
+    description: "joinbook"
+    permission: joinbook.main
+    aliases: jb
+
