@@ -12,6 +12,7 @@ public class Commands implements CommandExecutor {
         if (args.length == 1 && args[0].equals("reload")){
             try {
                 JoinBook.main.reloadConfig();
+                JoinBook.main.getLogger().info("已重载插件！");
             }catch (Exception e){
                 JoinBook.main.getLogger().warning("重载失败！");
                 JoinBook.main.getLogger().warning("请检查配置文件 或 再次重载插件！");
