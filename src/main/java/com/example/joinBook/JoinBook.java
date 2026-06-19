@@ -12,7 +12,13 @@ public final class JoinBook extends JavaPlugin {
     @Override
     public void onEnable() {
         // 首次运行自动生成config.yml
-        saveDefaultConfig();
+        try {
+            saveDefaultConfig();
+            getLogger().info("已下载配置文件！");
+        }catch (Exception e) {
+            getLogger().warning("下载配置文件失败！");
+            getLogger().warning("请重启服务器再次生成配置文件！");
+        }
 
         // 注册监听器
         getServer().getPluginManager().registerEvents(

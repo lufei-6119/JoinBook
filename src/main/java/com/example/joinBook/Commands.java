@@ -21,7 +21,7 @@ public class Commands implements CommandExecutor {
             return true;
         }
 
-        if (args.length == 1 && args[0].equals("reload")){
+        if (args.length == 1 && args[0].equals("help")){
             sender.sendMessage("JoinBook插件指令查询");
             sender.sendMessage("/jb reload - 重载插件");
 
